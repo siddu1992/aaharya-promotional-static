@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Concierge | Anvayaa Design Atelier</title>
+  <meta name="description" content="Connect with the Anvayaa Private Atelier concierge for bespoke bridal inquiries, AI Try-On styling support, and showroom appointments.">
+  <link rel="canonical" href="https://anvayaafashion.com/contact.html">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-black text-light">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-luxury sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column text-white" href="index.html">
+        <span class="font-serif-luxury fw-bold tracking-widest h4 m-0">ANVAYAA</span>
+        <span class="small text-warning text-uppercase tracking-widest font-monospace" style="font-size: 0.65rem;">HAUTE COUTURE & AI INNOVATION</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">SHOP NOW</a>
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai-try-on.html">AI Try-On</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">
+            <i class="bi bi-bag me-1"></i> SHOP NOW
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container py-4 text-center">
+      <span class="badge-gold-glow">CONCIERGE & INQUIRIES</span>
+      <h1 class="display-3 font-serif-luxury fw-bold text-white mt-3 mb-4">
+        Connect With Our <br><span class="gold-gradient-text fst-italic">Private Atelier</span>
+      </h1>
+      <p class="lead text-secondary max-w-2xl mx-auto fw-light mb-5">
+        Whether you seek private bridal appointments, styling guidance, press inquiries, or technical support for AI Try-On, our concierge team is at your service.
+      </p>
+    </div>
+
+    <div class="container py-4">
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="glass-card p-4 p-md-5">
+            <h2 class="h3 font-serif-luxury text-white mb-2">Send a Message</h2>
+            <p class="small text-secondary mb-4">Fill out the form below. We typically respond within 24 business hours.</p>
+
+            <div id="contact-alert-box" class="d-none mb-4 p-3 rounded-3 bg-success-subtle text-success small border border-success-subtle">
+              <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your inquiry has been transmitted to our concierge desk.
+            </div>
+
+            <form id="contact-form" class="row g-3">
+              <div class="col-12">
+                <label class="form-label small text-uppercase text-secondary fw-bold">Full Name <span class="text-warning">*</span></label>
+                <input type="text" id="contact-name" required placeholder="e.g. Maharani Radhika Singh" class="form-control bg-black border-secondary text-white p-3">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase text-secondary fw-bold">Email Address <span class="text-warning">*</span></label>
+                <input type="email" id="contact-email" required placeholder="name@domain.com" class="form-control bg-black border-secondary text-white p-3">
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase text-secondary fw-bold">Phone Number</label>
+                <input type="tel" id="contact-phone" placeholder="+91 98765 43210" class="form-control bg-black border-secondary text-white p-3">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-uppercase text-secondary fw-bold">Inquiry Topic</label>
+                <select id="contact-subject" class="form-select bg-black border-secondary text-white p-3">
+                  <option value="Bespoke Bridal Consultation">Bespoke Bridal / Groomswear Consultation</option>
+                  <option value="AI Virtual Try-On Support">AI Virtual Try-On Support & Sizing</option>
+                  <option value="Showroom Atelier Appointment">Showroom Atelier Appointment (Bengaluru)</option>
+                  <option value="Press & Media Partnerships">Press & Media Partnerships</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label small text-uppercase text-secondary fw-bold">Your Message <span class="text-warning">*</span></label>
+                <textarea id="contact-message" rows="4" required placeholder="Tell us about your event, style preferences, or custom requirements..." class="form-control bg-black border-secondary text-white p-3"></textarea>
+              </div>
+
+              <div class="col-12 pt-2">
+                <button type="submit" class="btn btn-gold w-100 py-3">
+                  <i class="bi bi-send-fill me-2"></i> Transmit Inquiry to Concierge
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-5">
+          <!-- Address Card -->
+          <div class="glass-card-gold p-4 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="rounded-3 bg-warning bg-opacity-20 p-2 text-warning"><i class="bi bi-geo-alt fs-4"></i></div>
+              <h3 class="h5 font-serif-luxury text-white mb-0">The Flagship Atelier</h3>
+            </div>
+            <p class="small text-secondary fw-light mb-3">
+              Anvayaa Design Atelier, 4th Floor, Crescent Tower<br>
+              Indiranagar 100 Feet Road<br>
+              Bengaluru, Karnataka - 560038, India
+            </p>
+            <div class="small text-warning"><i class="bi bi-clock me-1"></i> Monday – Saturday: 10:00 AM – 8:00 PM IST</div>
+          </div>
+
+          <!-- Direct Communications -->
+          <div class="glass-card p-4 mb-4">
+            <h3 class="h6 font-serif-luxury text-white mb-3">Direct Communications</h3>
+            <div class="d-flex flex-column gap-3 small">
+              <div>
+                <div class="text-secondary" style="font-size: 0.75rem;">General Concierge:</div>
+                <a href="mailto:concierge@anvayaafashion.com" class="text-white text-decoration-underline">concierge@anvayaafashion.com</a>
+              </div>
+              <div>
+                <div class="text-secondary" style="font-size: 0.75rem;">Press & Media:</div>
+                <a href="mailto:press@anvayaafashion.com" class="text-white text-decoration-underline">press@anvayaafashion.com</a>
+              </div>
+              <div>
+                <div class="text-secondary" style="font-size: 0.75rem;">Client Telephony:</div>
+                <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Channels -->
+          <div class="glass-card p-4">
+            <div class="small text-uppercase text-secondary fw-bold mb-3">Connect on Social Channels</div>
+            <div class="d-flex gap-2">
+              <a href="https://instagram.com/aaharyafashion" target="_blank" class="btn btn-dark btn-sm rounded-circle p-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://facebook.com/aaharyafashion" target="_blank" class="btn btn-dark btn-sm rounded-circle p-2" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://youtube.com/@aaharyafashion" target="_blank" class="btn btn-dark btn-sm rounded-circle p-2" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="https://linkedin.com/company/aaharya-fashion" target="_blank" class="btn btn-dark btn-sm rounded-circle p-2" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-5 pb-4 border-top border-secondary border-opacity-25">
+    <div class="container text-center text-md-start">
+      <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-4">
+          <span class="font-serif-luxury h3 fw-bold text-white">ANVAYAA</span>
+          <p class="small text-secondary mt-2">Anvayaa blends timeless Indian craftsmanship, regal silhouettes, and modern haute couture with breakthrough AI Virtual Try-On.</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="small text-white text-uppercase fw-bold mb-3">Navigation</div>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html">Home</a></li>
+            <li class="mb-2"><a href="collections.html">Collections</a></li>
+            <li class="mb-2"><a href="ai-try-on.html">AI Try-On</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="small text-white text-uppercase fw-bold mb-3">Client Care</div>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li class="mb-2"><a href="return-refund-policy.html">Returns & Exchange</a></li>
+            <li class="mb-2"><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li class="mb-2"><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-4 text-center small text-secondary">© 2026 Anvayaa Couture Inc. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contact-alert-box').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

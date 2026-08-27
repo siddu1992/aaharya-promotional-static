@@ -1,0 +1,318 @@
+/* ==========================================================================
+   Anvayaa Haute Couture - Standalone HTML5 / CSS3 / Bootstrap 5 Luxury Theme
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --bg-primary: #0A0A0C;
+  --bg-secondary: #121216;
+  --bg-card: #18181F;
+  --bg-glass: rgba(18, 18, 22, 0.8);
+  
+  --gold-primary: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-dark: #997F25;
+  --gold-gradient: linear-gradient(135deg, #ECC94B 0%, #D4AF37 50%, #A68A2E 100%);
+  
+  --text-primary: #FBF9F5;
+  --text-secondary: #A0A0AB;
+  --text-muted: #71717A;
+  
+  --border-subtle: rgba(212, 175, 55, 0.2);
+  --border-glass: rgba(255, 255, 255, 0.08);
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--gold-primary);
+  color: #000;
+}
+
+/* Typography Classes */
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-sans-modern {
+  font-family: var(--font-sans);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0C2 0%, #D4AF37 50%, #AA8C30 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Glassmorphism & Cards */
+.glass-card {
+  background: rgba(18, 18, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: 1.5rem;
+}
+
+.glass-card-gold {
+  background: rgba(22, 20, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Luxury Buttons */
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #0A0A0C !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 50rem;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #FFF3C4 0%, #E5C158 50%, #C4A135 100%);
+  box-shadow: 0 6px 28px rgba(212, 175, 55, 0.45);
+  transform: translateY(-2px);
+  color: #000 !important;
+}
+
+.btn-gold-outline {
+  background: rgba(212, 175, 55, 0.08);
+  color: var(--gold-light) !important;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50rem;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btn-gold-outline:hover {
+  background: rgba(212, 175, 55, 0.2);
+  border-color: var(--gold-primary);
+  color: #FFF0C2 !important;
+  transform: translateY(-2px);
+}
+
+.btn-luxury-outline {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50rem;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.btn-luxury-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Badges */
+.badge-gold-glow {
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--gold-light);
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.badge-gold-glow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-primary);
+  display: inline-block;
+}
+
+/* Header & Navbar */
+.navbar-luxury {
+  background: transparent;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.25rem 0;
+}
+
+.navbar-luxury.scrolled {
+  background: rgba(10, 10, 12, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.85rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-luxury .nav-link {
+  color: var(--text-secondary) !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-luxury .nav-link:hover,
+.navbar-luxury .nav-link.active {
+  color: var(--gold-primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  filter: brightness(0.7);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(10, 10, 12, 0.85) 100%),
+              linear-gradient(to top, #0A0A0C 0%, transparent 60%);
+}
+
+/* Section Header */
+.section-header {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .section-header h2 {
+    font-size: 3.25rem;
+  }
+}
+
+.section-header p {
+  color: var(--text-secondary);
+  font-weight: 300;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
+.divider-gold {
+  width: 4rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-primary), transparent);
+  margin: 1.25rem auto 0;
+}
+
+/* 360 Viewer Canvas */
+.viewer-canvas-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--border-glass);
+}
+
+.viewer-canvas-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.viewer-canvas-box img.zoomed {
+  transform: scale(1.3);
+  cursor: zoom-out;
+}
+
+/* Footer */
+footer {
+  background: #070709;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--gold-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
