@@ -10,9 +10,9 @@ const SITE_CONFIG = {
     name: "Anvayaa",
     tagline: "Where Heritage Elegance Meets AI Precision",
     shortDescription:
-      "Anvayaa blends timeless Indian craftsmanship, regal silhouettes, and modern haute couture with breakthrough AI Virtual Try-On and 360° product visualization.",
+      "Anvayaa blends timeless Indian craftsmanship, regal silhouettes, and modern haute couture with breakthrough AI Virtual Try-On.",
     fullDescription:
-      "Anvayaa is an avant-garde apparel house dedicated to reimagining contemporary fashion. We handcraft exquisite ethnic, fusion, and modern couture collections while empowering shoppers with intelligent AI Virtual Try-On and seamless 360-degree garment inspection.",
+      "Anvayaa is an avant-garde apparel house dedicated to reimagining contemporary fashion. We handcraft exquisite ethnic, fusion, and modern couture collections while empowering shoppers with intelligent AI Virtual Try-On and seamless garment inspection.",
     logoText: "ANVAYAA",
     logoSubtext: "HAUTE COUTURE & AI INNOVATION",
   },
