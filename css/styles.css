@@ -170,34 +170,133 @@ body {
 
 /* Header & Navbar */
 .navbar-luxury {
-  background: transparent;
+  background: rgba(10, 10, 12, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.3s ease;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.85rem 0;
 }
 
 .navbar-luxury.scrolled {
-  background: rgba(10, 10, 12, 0.92);
-  backdrop-filter: blur(18px);
+  background: rgba(8, 8, 10, 0.98);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 0.85rem 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 0.65rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-luxury .navbar-brand {
+  line-height: 1.2;
+}
+
+.navbar-subbrand {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .navbar-subbrand {
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+  }
 }
 
 .navbar-luxury .nav-link {
   color: var(--text-secondary) !important;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: 0.825rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 0.5rem 1rem !important;
-  transition: color 0.3s ease;
+  padding: 0.5rem 0.85rem !important;
+  transition: color 0.25s ease;
 }
 
 .navbar-luxury .nav-link:hover,
 .navbar-luxury .nav-link.active {
   color: var(--gold-primary) !important;
 }
+
+/* Mobile Offcanvas Drawer */
+.offcanvas.bg-black {
+  background-color: #0A0A0E !important;
+  border-left: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.offcanvas .nav-link {
+  color: #D1D1D6 !important;
+  border-radius: 8px;
+  padding: 0.65rem 1rem !important;
+  transition: all 0.2s ease;
+}
+
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+  color: var(--gold-primary) !important;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   Form Inputs & High-Contrast Placeholder Styling
+   ========================================================================== */
+.form-control,
+.form-select {
+  background-color: #121218 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #181820 !important;
+  border-color: var(--gold-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25) !important;
+  outline: none;
+}
+
+/* Explicit high-contrast placeholder styling across all browsers */
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #A0A0AB !important;
+  opacity: 0.9 !important;
+  font-size: 0.9rem;
+}
+
+.form-control::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #A0A0AB !important;
+  opacity: 0.9 !important;
+}
+
+.form-control::-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #A0A0AB !important;
+  opacity: 0.9 !important;
+}
+
+.form-control:-ms-input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #A0A0AB !important;
+  opacity: 0.9 !important;
+}
+
+.form-select option {
+  background-color: #121218;
+  color: #ffffff;
+}
+
 
 /* Hero Section */
 .hero-section {

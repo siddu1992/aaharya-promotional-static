@@ -50,10 +50,10 @@
   <!-- Top Announcement Bar -->
   <div class="bg-dark text-center py-2 px-3 border-bottom border-warning border-opacity-25">
     <div class="container d-flex justify-content-between align-items-center gap-2">
-      <div class="small mx-auto text-warning-subtle text-truncate">
+      <!-- <div class="small mx-auto text-warning-subtle text-truncate">
         <i class="bi bi-stars text-warning me-1"></i>
         <strong>Royal Festive Soirée:</strong> Handcrafted Zari Silk & Velvet Ensembles | Use Code: <span class="badge text-bg-warning text-dark font-monospace">FESTIVE25</span>
-      </div>
+      </div> -->
       <a href="http://localhost:8100/products?category=festive" data-ecommerce-link="shop" target="_blank" class="btn btn-link text-warning p-0 small text-decoration-none d-none d-md-inline">
         Shop Edit <i class="bi bi-arrow-right ms-1"></i>
       </a>
@@ -63,14 +63,14 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-luxury sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex flex-column text-white" href="index.html">
+      <a class="navbar-brand d-flex flex-column text-white text-decoration-none" href="index.html">
         <span class="font-serif-luxury fw-bold tracking-widest h4 m-0">ANVAYAA</span>
-        <span class="small text-warning text-uppercase tracking-widest font-monospace" style="font-size: 0.65rem;">HAUTE COUTURE & AI INNOVATION</span>
+        <span class="small text-warning text-uppercase tracking-widest font-monospace navbar-subbrand">HAUTE COUTURE &amp; AI INNOVATION</span>
       </a>
 
       <div class="d-flex align-items-center gap-2 d-lg-none">
-        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">SHOP NOW</a>
-        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm px-3 py-1">SHOP</a>
+        <button class="navbar-toggler border-0 text-white p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
           <i class="bi bi-list fs-2"></i>
         </button>
       </div>
@@ -86,9 +86,6 @@
         </ul>
 
         <div class="d-flex align-items-center gap-3">
-          <a href="http://localhost:8100/ai-try-ons" data-ecommerce-link="ai-try-on" target="_blank" class="btn btn-gold-outline btn-sm">
-            <i class="bi bi-stars text-warning me-1"></i> AI Studio
-          </a>
           <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">
             <i class="bi bi-bag me-1"></i> SHOP NOW
           </a>
@@ -99,27 +96,31 @@
 
   <!-- Mobile Offcanvas Drawer -->
   <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="offcanvasNavbar">
-    <div class="offcanvas-header border-bottom border-secondary border-opacity-25">
-      <h5 class="offcanvas-title font-serif-luxury text-warning">ANVAYAA NAVIGATION</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 px-4 py-3">
+      <div class="d-flex flex-column">
+        <span class="font-serif-luxury text-warning fw-bold h5 mb-0">ANVAYAA</span>
+        <span class="small text-secondary font-monospace" style="font-size: 0.6rem;">MENU</span>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column justify-content-between">
-      <ul class="navbar-nav">
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="index.html">Home</a></li>
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="collections.html">Collections</a></li>
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="ai-try-on.html">AI Virtual Try-On</a></li>
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="about.html">Our Story</a></li>
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="contact.html">Contact Concierge</a></li>
-        <li class="nav-item py-2"><a class="nav-link text-white fs-5 font-serif-luxury" href="privacy-policy.html">Privacy Policy</a></li>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item"><a class="nav-link active fs-5 font-serif-luxury" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="collections.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="ai-try-on.html">AI Virtual Try-On</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="about.html">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="contact.html">Contact Concierge</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="privacy-policy.html">Privacy Policy</a></li>
       </ul>
 
-      <div class="py-4">
-        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold w-100 py-3 mb-3">
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold w-100 py-3 mb-2">
           <i class="bi bi-bag me-2"></i> SHOP ON E-COMMERCE
         </a>
       </div>
     </div>
   </div>
+
 
   <main>
     <!-- HERO SECTION -->
@@ -302,22 +303,7 @@
   <!-- FOOTER -->
   <footer class="pt-5 pb-4">
     <div class="container">
-      <div class="glass-card-gold p-4 p-md-5 mb-5 border-warning border-opacity-25">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-6">
-            <div class="text-warning small text-uppercase fw-bold mb-1"><i class="bi bi-stars me-1"></i> Private VIP Salon</div>
-            <h3 class="h3 font-serif-luxury text-white mb-2">Receive Exclusive Preview Invites</h3>
-            <p class="small text-secondary mb-0">Join our discerning circle for early access to limited drops and private trunk shows.</p>
-          </div>
-          <div class="col-lg-6">
-            <form id="vip-newsletter-form" class="d-flex gap-2">
-              <input type="email" required placeholder="Enter your VIP email address..." class="form-control rounded-pill bg-black border-secondary text-white px-4">
-              <button type="submit" class="btn btn-gold text-nowrap">Join Circle</button>
-            </form>
-            <div id="vip-form-response" class="mt-2"></div>
-          </div>
-        </div>
-      </div>
+   
 
       <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
         <div class="col-lg-4">

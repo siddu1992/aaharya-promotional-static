@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (responseContainer) {
           responseContainer.innerHTML = `
             <div class="p-3 rounded-xl bg-success-subtle text-success border border-success-subtle text-xs">
-              <strong>Thank you for subscribing!</strong> You are now enrolled in the Anvayaa VIP lookbook circle.
+              <strong>Thank you for subscribing!</strong> You will now receive updates on our latest collections and offers.
             </div>
           `;
         }

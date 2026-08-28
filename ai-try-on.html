@@ -20,10 +20,17 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-luxury sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex flex-column text-white" href="index.html">
+      <a class="navbar-brand d-flex flex-column text-white text-decoration-none" href="index.html">
         <span class="font-serif-luxury fw-bold tracking-widest h4 m-0">ANVAYAA</span>
-        <span class="small text-warning text-uppercase tracking-widest font-monospace" style="font-size: 0.65rem;">HAUTE COUTURE & AI INNOVATION</span>
+        <span class="small text-warning text-uppercase tracking-widest font-monospace navbar-subbrand">HAUTE COUTURE &amp; AI INNOVATION</span>
       </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm px-3 py-1">SHOP</a>
+        <button class="navbar-toggler border-0 text-white p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
@@ -36,13 +43,41 @@
         </ul>
 
         <div class="d-flex align-items-center gap-3">
-          <a href="http://localhost:8100/ai-try-ons" data-ecommerce-link="ai-try-on" target="_blank" class="btn btn-gold btn-sm">
-            <i class="bi bi-stars me-1"></i> Launch Live AI
+          <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">
+            <i class="bi bi-bag me-1"></i> SHOP NOW
           </a>
         </div>
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 px-4 py-3">
+      <div class="d-flex flex-column">
+        <span class="font-serif-luxury text-warning fw-bold h5 mb-0">ANVAYAA</span>
+        <span class="small text-secondary font-monospace" style="font-size: 0.6rem;">MENU</span>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="collections.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link active fs-5 font-serif-luxury" href="ai-try-on.html">AI Virtual Try-On</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="about.html">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="contact.html">Contact Concierge</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold w-100 py-3 mb-2">
+          <i class="bi bi-bag me-2"></i> SHOP ON E-COMMERCE
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <main class="py-5">
     <div class="container py-4 text-center">
@@ -152,7 +187,7 @@
         <div class="section-header">
           <span class="badge-gold-glow">STEP-BY-STEP GUIDE</span>
           <h2>How the AI Virtual Try-On Journey Works</h2>
-          <p>From photo selection to tailored doorstep delivery in five frictionless steps.</p>
+          <p>From selecting your favourite outfit to viewing your personalized AI try-on in five simple steps.</p>
           <div class="divider-gold"></div>
         </div>
 
@@ -160,36 +195,36 @@
           <div class="col-md">
             <div class="glass-card p-4 h-100 text-center">
               <div class="h3 font-serif-luxury text-warning fw-bold mb-2">01</div>
-              <h3 class="h6 font-serif-luxury text-white">Upload Photo / Select Avatar</h3>
-              <p class="small text-secondary mb-0">Provide a front photo or pick a high-fashion avatar.</p>
+              <h3 class="h6 font-serif-luxury text-white">Select Product</h3>
+              <p class="small text-secondary mb-0">Browse our collections and pick the outfit you want to try on.</p>
             </div>
           </div>
           <div class="col-md">
             <div class="glass-card p-4 h-100 text-center">
               <div class="h3 font-serif-luxury text-warning fw-bold mb-2">02</div>
-              <h3 class="h6 font-serif-luxury text-white">Select Haute Couture</h3>
-              <p class="small text-secondary mb-0">Browse sarees, bridal lehengas, bandhgalas or co-ords.</p>
+              <h3 class="h6 font-serif-luxury text-white">Click "AI Try-On"</h3>
+              <p class="small text-secondary mb-0">Tap the AI Virtual Try-On button on the product details page.</p>
             </div>
           </div>
           <div class="col-md">
             <div class="glass-card p-4 h-100 text-center">
               <div class="h3 font-serif-luxury text-warning fw-bold mb-2">03</div>
-              <h3 class="h6 font-serif-luxury text-white">Generate Neural Drape</h3>
-              <p class="small text-secondary mb-0">Simulate fabric weight, tension and lighting physics.</p>
+              <h3 class="h6 font-serif-luxury text-white">Camera or Gallery</h3>
+              <p class="small text-secondary mb-0">Take a photo with your camera or choose one from your gallery.</p>
             </div>
           </div>
           <div class="col-md">
             <div class="glass-card p-4 h-100 text-center">
               <div class="h3 font-serif-luxury text-warning fw-bold mb-2">04</div>
-              <h3 class="h6 font-serif-luxury text-white">Review Your Fit</h3>
-              <p class="small text-secondary mb-0">Inspect necklines, sleeve cuts and border textures.</p>
+              <h3 class="h6 font-serif-luxury text-white">AI Processing</h3>
+              <p class="small text-secondary mb-0">Our AI instantly processes and drapes the garment onto your photo.</p>
             </div>
           </div>
           <div class="col-md">
             <div class="glass-card p-4 h-100 text-center">
               <div class="h3 font-serif-luxury text-warning fw-bold mb-2">05</div>
-              <h3 class="h6 font-serif-luxury text-white">Shop On E-Commerce</h3>
-              <p class="small text-secondary mb-0">Proceed directly into our store with selected size.</p>
+              <h3 class="h6 font-serif-luxury text-white">View Generated Image</h3>
+              <p class="small text-secondary mb-0">See your realistic try-on look, zoom into details, share, or add to cart.</p>
             </div>
           </div>
         </div>

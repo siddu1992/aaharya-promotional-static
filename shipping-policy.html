@@ -17,12 +17,21 @@
 </head>
 <body class="bg-black text-light">
 
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-luxury sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex flex-column text-white" href="index.html">
+      <a class="navbar-brand d-flex flex-column text-white text-decoration-none" href="index.html">
         <span class="font-serif-luxury fw-bold tracking-widest h4 m-0">ANVAYAA</span>
-        <span class="small text-warning text-uppercase tracking-widest font-monospace" style="font-size: 0.65rem;">HAUTE COUTURE & AI INNOVATION</span>
+        <span class="small text-warning text-uppercase tracking-widest font-monospace navbar-subbrand">HAUTE COUTURE &amp; AI INNOVATION</span>
       </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm px-3 py-1">SHOP</a>
+        <button class="navbar-toggler border-0 text-white p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+      </div>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -30,10 +39,45 @@
           <li class="nav-item"><a class="nav-link" href="ai-try-on.html">AI Try-On</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
         </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold btn-sm">
+            <i class="bi bi-bag me-1"></i> SHOP NOW
+          </a>
+        </div>
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Offcanvas Drawer -->
+  <div class="offcanvas offcanvas-end bg-black text-white" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 px-4 py-3">
+      <div class="d-flex flex-column">
+        <span class="font-serif-luxury text-warning fw-bold h5 mb-0">ANVAYAA</span>
+        <span class="small text-secondary font-monospace" style="font-size: 0.6rem;">MENU</span>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+      <ul class="navbar-nav gap-2">
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="collections.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="ai-try-on.html">AI Virtual Try-On</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="about.html">Our Story</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="contact.html">Contact Concierge</a></li>
+        <li class="nav-item"><a class="nav-link fs-5 font-serif-luxury" href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+
+      <div class="pt-4 border-top border-secondary border-opacity-25">
+        <a href="http://localhost:8100/products" data-ecommerce-link="shop" target="_blank" class="btn btn-gold w-100 py-3 mb-2">
+          <i class="bi bi-bag me-2"></i> SHOP ON E-COMMERCE
+        </a>
+      </div>
+    </div>
+  </div>
+
 
   <main class="py-5">
     <div class="container py-4 max-w-4xl mx-auto">
