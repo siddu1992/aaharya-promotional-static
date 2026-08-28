@@ -504,8 +504,8 @@
           <!-- 8. International Transfers -->
           <div class="policy-section" id="section-8">
             <h2 class="font-serif-luxury"><span class="text-warning me-2">08.</span>Data Storage</h2>
-            <p class="text-secondary small">Most data processing and storage occurs within India. However, images uploaded for our AI Virtual Try-On feature are stored on <strong class="text-white">Cloudflare R2</strong> — a secure, globally distributed object storage service operated by Cloudflare, Inc. Cloudflare R2 does not charge egress fees and ensures fast, encrypted delivery of your images during your session.</p>
-            <p class="text-secondary small">Cloudflare R2 storage may be located outside India. All such transfers are protected by appropriate contractual safeguards, and images are automatically deleted within 60 minutes of your session ending. By using the AI Virtual Try-On feature, you consent to this storage arrangement.</p>
+            <p class="text-secondary small">Most data processing and storage occurs within India. Images uploaded and generated for our AI Virtual Try-On feature are stored on <strong class="text-white">Cloudflare R2</strong> — a secure, globally distributed object storage service operated by Cloudflare, Inc. Cloudflare R2 provides encrypted storage and fast delivery of generated try-on imagery.</p>
+            <p class="text-secondary small">Cloudflare R2 storage may be located in data centres across India and internationally. All transfers are protected by strict security safeguards, and images are automatically deleted by our scheduled background service based on the system retention schedule (configurable by authorized administration). By using the AI Virtual Try-On feature, you consent to this storage and lifecycle management arrangement.</p>
           </div>
 
           <!-- 9. Data Retention -->
@@ -531,9 +531,9 @@
                   <td>Active marketing consent</td>
                 </tr>
                 <tr>
-                  <td>AI Try-On photographs</td>
-                  <td>Maximum 60 minutes from session end</td>
-                  <td>Transient processing only; automatic purge</td>
+                  <td>AI Try-On images &amp; results</td>
+                  <td>System-managed retention window (purged automatically from Cloudflare R2)</td>
+                  <td>Transient simulation delivery; automated cleanup based on admin retention policy</td>
                 </tr>
                 <tr>
                   <td>Website analytics logs</td>
