@@ -30,9 +30,9 @@ const SITE_CONFIG = {
   },
 
   contact: {
-    email: "concierge@anvayaafashion.com",
-    supportEmail: "support@anvayaafashion.com",
-    pressEmail: "press@anvayaafashion.com",
+    email: "concierge@anvayaa.store",
+    supportEmail: "support@anvayaa.store",
+    pressEmail: "press@anvayaa.store",
     phone: "+91 98765 43210",
     supportHours: "Monday – Saturday: 10:00 AM – 8:00 PM IST",
     address: {

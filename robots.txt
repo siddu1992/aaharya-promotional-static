@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aaharyafashion.com/sitemap.xml
+Sitemap: https://anvayaa.store/sitemap.xml
