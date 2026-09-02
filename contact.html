@@ -103,9 +103,7 @@
             <h2 class="h3 font-serif-luxury text-white mb-2">Send a Message</h2>
             <p class="small text-secondary mb-4">Fill out the form below. We typically respond within 24 business hours.</p>
 
-            <div id="contact-alert-box" class="d-none mb-4 p-3 rounded-3 bg-success-subtle text-success small border border-success-subtle">
-              <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your inquiry has been transmitted to our concierge desk.
-            </div>
+            <div id="contact-alert-box" style="display:none;" class="mb-4 p-3 rounded-3 small"></div>
 
             <form id="contact-form" class="row g-3">
               <div class="col-12">
@@ -166,8 +164,8 @@
             <h3 class="h6 font-serif-luxury text-white mb-3">Direct Communications</h3>
             <div class="d-flex flex-column gap-3 small">
               <div>
-                <div class="text-secondary" style="font-size: 0.75rem;">General Concierge:</div>
-                <a href="mailto:concierge@anvayaa.store" class="text-white text-decoration-underline">concierge@anvayaa.store</a>
+                <div class="text-secondary" style="font-size: 0.75rem;">Customer Support:</div>
+                <a href="mailto:support@anvayaa.store" class="text-white text-decoration-underline">support@anvayaa.store</a>
               </div>
               <div>
                 <div class="text-secondary" style="font-size: 0.75rem;">Press & Media:</div>
@@ -231,12 +229,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('contact-alert-box').classList.remove('d-none');
-      this.reset();
-    });
-  </script>
+  <script src="js/contact.js"></script>
 </body>
 </html>

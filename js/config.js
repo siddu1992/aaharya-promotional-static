@@ -4,7 +4,7 @@
  */
 const SITE_CONFIG = {
   // Central E-Commerce Store URL (Where all 'Shop Now' & cart interactions route)
-  ECOMMERCE_URL: "http://localhost:8100",
+  ECOMMERCE_URL: "https://shop.anvayaa.store/",
 
   brand: {
     name: "Anvayaa",
@@ -18,11 +18,11 @@ const SITE_CONFIG = {
   },
 
   urls: {
-    ecommerce: "http://localhost:8100",
-    ecommerceShop: "http://localhost:8100/products",
-    ecommerceAiTryOn: "http://localhost:8100/ai-try-ons",
-    ecommerceWishlist: "http://localhost:8100/wishlist",
-    ecommerceOrders: "http://localhost:8100/orders-list",
+    ecommerce: "https://shop.anvayaa.store",
+    ecommerceShop: "https://shop.anvayaa.store/products",
+    ecommerceAiTryOn: "https://shop.anvayaa.store/ai-try-ons",
+    ecommerceWishlist: "https://shop.anvayaa.store/wishlist",
+    ecommerceOrders: "https://shop.anvayaa.store/orders-list",
     instagram: "https://instagram.com/anvayaafashion",
     facebook: "https://facebook.com/anvayaafashion",
     youtube: "https://youtube.com/@anvayaafashion",
@@ -30,9 +30,9 @@ const SITE_CONFIG = {
   },
 
   contact: {
-    email: "concierge@anvayaa.store",
+    email: "support@anvayaa.store",
     supportEmail: "support@anvayaa.store",
-    pressEmail: "press@anvayaa.store",
+    pressEmail: "support@anvayaa.store",
     phone: "+91 98765 43210",
     supportHours: "Monday – Saturday: 10:00 AM – 8:00 PM IST",
     address: {
