@@ -1,5 +1,5 @@
 /**
- * Anvayaa Contact Form — Zoho Mail Integration
+ * vastramira Contact Form — Zoho Mail Integration
  * -----------------------------------------------
  * Sends the form payload to the backend proxy at /api/contact.
  * The backend (aaharya-backend.onrender.com) handles Zoho Mail API OAuth
@@ -102,11 +102,11 @@
         throw new Error(data.error || "Server error. Please try again.");
       }
     } catch (err) {
-      console.error("[Anvayaa Contact] Submission error:", err);
+      console.error("[vastramira Contact] Submission error:", err);
       showAlert(
         "error",
         err.message === "Failed to fetch"
-          ? "Unable to reach our server. Please try again later or email us directly at support@anvayaa.store."
+          ? "Unable to reach our server. Please try again later or email us directly at support@vastramira.store."
           : err.message || "Something went wrong. Please try again."
       );
     } finally {

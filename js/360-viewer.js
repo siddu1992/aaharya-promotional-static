@@ -47,7 +47,7 @@
     function render() {
       const active = angles[currentIdx];
       imgEl.src = active.url;
-      imgEl.alt = `Anvayaa Couture - ${active.label}`;
+      imgEl.alt = `vastramira Couture - ${active.label}`;
       if (badgeEl) badgeEl.innerText = `${active.angle}° • ${active.label}`;
       if (descEl) descEl.innerText = active.description;
     }

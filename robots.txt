@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /cgi-bin/
+Disallow: /private/
 
-Sitemap: https://anvayaa.store/sitemap.xml
+Sitemap: https://vastramira.store/sitemap.xml
+Host: vastramira.store

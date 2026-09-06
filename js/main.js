@@ -1,5 +1,5 @@
 /**
- * Main application script for Anvayaa Promotional Website (Pure HTML/CSS/Bootstrap)
+ * Main application script for vastramira Promotional Website (Pure HTML/CSS/Bootstrap)
  */
 document.addEventListener("DOMContentLoaded", () => {
   // Update all elements with data-ecommerce-link attribute

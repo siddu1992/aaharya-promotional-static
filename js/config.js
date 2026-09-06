@@ -1,42 +1,42 @@
 /**
- * Central Configuration for Anvayaa Promotional Website (Pure HTML/CSS/Bootstrap)
+ * Central Configuration for vastramira Promotional Website (Pure HTML/CSS/Bootstrap)
  * Modify variables here to update brand details, links, campaigns, and collections site-wide.
  */
 const SITE_CONFIG = {
   // Central E-Commerce Store URL (Where all 'Shop Now' & cart interactions route)
-  ECOMMERCE_URL: "https://shop.anvayaa.store/",
+  ECOMMERCE_URL: "https://shop.vastramira.store/",
 
   brand: {
-    name: "Anvayaa",
+    name: "vastramira",
     tagline: "Where Heritage Elegance Meets AI Precision",
     shortDescription:
-      "Anvayaa blends timeless Indian craftsmanship, regal silhouettes, and modern haute couture with breakthrough AI Virtual Try-On.",
+      "vastramira blends timeless Indian craftsmanship, regal silhouettes, and modern haute couture with breakthrough AI Virtual Try-On.",
     fullDescription:
-      "Anvayaa is an avant-garde apparel house dedicated to reimagining contemporary fashion. We handcraft exquisite ethnic, fusion, and modern couture collections while empowering shoppers with intelligent AI Virtual Try-On and seamless garment inspection.",
-    logoText: "ANVAYAA",
+      "vastramira is an avant-garde apparel house dedicated to reimagining contemporary fashion. We handcraft exquisite ethnic, fusion, and modern couture collections while empowering shoppers with intelligent AI Virtual Try-On and seamless garment inspection.",
+    logoText: "vastramira",
     logoSubtext: "HAUTE COUTURE & AI INNOVATION",
   },
 
   urls: {
-    ecommerce: "https://shop.anvayaa.store",
-    ecommerceShop: "https://shop.anvayaa.store/products",
-    ecommerceAiTryOn: "https://shop.anvayaa.store/ai-try-ons",
-    ecommerceWishlist: "https://shop.anvayaa.store/wishlist",
-    ecommerceOrders: "https://shop.anvayaa.store/orders-list",
-    instagram: "https://instagram.com/anvayaafashion",
-    facebook: "https://facebook.com/anvayaafashion",
-    youtube: "https://youtube.com/@anvayaafashion",
-    linkedin: "https://linkedin.com/company/anvayaa-fashion",
+    ecommerce: "https://shop.vastramira.store",
+    ecommerceShop: "https://shop.vastramira.store/products",
+    ecommerceAiTryOn: "https://shop.vastramira.store/ai-try-ons",
+    ecommerceWishlist: "https://shop.vastramira.store/wishlist",
+    ecommerceOrders: "https://shop.vastramira.store/orders-list",
+    instagram: "https://instagram.com/vastramirafashion",
+    facebook: "https://facebook.com/vastramirafashion",
+    youtube: "https://youtube.com/@vastramirafashion",
+    linkedin: "https://linkedin.com/company/vastramira-fashion",
   },
 
   contact: {
-    email: "support@anvayaa.store",
-    supportEmail: "support@anvayaa.store",
-    pressEmail: "support@anvayaa.store",
+    email: "support@vastramira.store",
+    supportEmail: "support@vastramira.store",
+    pressEmail: "support@vastramira.store",
     phone: "+91 98765 43210",
     supportHours: "Monday – Saturday: 10:00 AM – 8:00 PM IST",
     address: {
-      line1: "Anvayaa Design Atelier, 4th Floor, Crescent Tower",
+      line1: "vastramira Design Atelier, 4th Floor, Crescent Tower",
       line2: "Indiranagar 100 Feet Road",
       city: "Bengaluru",
       state: "Karnataka",
@@ -65,7 +65,7 @@ const SITE_CONFIG = {
       title: "Couture in 3D & AI Virtual Try-On",
       subtitle: "Hyper-Realistic Fit & Drape Simulation",
       description:
-        "Experience fashion without fitting room doubts. Upload your photo or choose our curated avatars to see Anvayaa couture drape naturally on your silhouette.",
+        "Experience fashion without fitting room doubts. Upload your photo or choose our curated avatars to see vastramira couture drape naturally on your silhouette.",
       badge: "AI Powered",
       ctaText: "Launch AI Studio",
       categorySlug: "ai-try-ons",

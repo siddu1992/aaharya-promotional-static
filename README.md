@@ -1,6 +1,6 @@
-# Anvayaa Promotional Website - Pure HTML5, CSS3 & Bootstrap 5
+# vastramira Promotional Website - Pure HTML5, CSS3 & Bootstrap 5
 
-This is a standalone, lightweight, ultra-luxury promotional website for the **Anvayaa** apparel brand built purely with **HTML5, CSS3, Bootstrap 5, and JavaScript**.
+This is a standalone, lightweight, ultra-luxury promotional website for the **vastramira** apparel brand built purely with **HTML5, CSS3, Bootstrap 5, and JavaScript**.
 
 It contains **zero Node.js/Next.js framework overhead** and can be served directly from any static host or web server.
 
